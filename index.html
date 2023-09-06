@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body class="body">
+    <section class="sidebar">
+      <div class="sidebar__top-menu">
+        <a href="">
+          <span class="fa-stack">
+            <i
+              class="fa-solid fa-bell fa-stack-2x sidebar__notification-icon-background"
+            ></i>
+            <i
+              class="fa-regular fa-bell fa-stack-2x sidebar__notification-icon-overlay"
+            ></i>
+          </span>
+        </a>
+        <a href="">
+          <i class="fa-solid fa-gear fa-2x sidebar__settings-icon"></i>
+        </a>
+      </div>
+      <figure class="sidebar__user-profile">
+        <img
+          class="sidebar__user-image"
+          src="images/image 2.png"
+          alt="User profile picture"
+        />
+        <figcaption class="sidebar__user-name">Lance Newmann</figcaption>
+      </figure>
+      <nav class="sidebar__navigation-menu">
+        <ul>
+          <li>
+            <button class="sidebar__navigation-menu-button">
+              <span class="sidebar__navigation-menu-icon-text">
+                <i
+                  class="fa-solid fa-calendar sidebar__navigation-menu-icon"
+                ></i>
+                <span class="sidebar__navigation-menu-text">Schedule</span>
+              </span>
+              <i
+                class="fa-solid fa-chevron-right sidebar__navigation-menu-arrow"
+              ></i>
+            </button>
+          </li>
+          <li>
+            <button class="sidebar__navigation-menu-button">
+              <span class="sidebar__navigation-menu-icon-text">
+                <i
+                  class="fa-solid fa-bell-concierge sidebar__navigation-menu-icon"
+                ></i>
+                <span class="sidebar__navigation-menu-text">Orders</span>
+              </span>
+              <i
+                class="fa-solid fa-chevron-right sidebar__navigation-menu-arrow"
+              ></i>
+            </button>
+          </li>
+          <li>
+            <button class="sidebar__navigation-menu-button">
+              <span class="sidebar__navigation-menu-icon-text">
+                <i class="fa-solid fa-user sidebar__navigation-menu-icon"></i>
+                <span class="sidebar__navigation-menu-text">Customers</span>
+              </span>
+              <i
+                class="fa-solid fa-chevron-right sidebar__navigation-menu-arrow"
+              ></i>
+            </button>
+          </li>
+          <li>
+            <button class="sidebar__navigation-menu-button">
+              <span class="sidebar__navigation-menu-icon-text">
+                <i
+                  class="fa-solid fa-briefcase sidebar__navigation-menu-icon"
+                ></i>
+                <span class="sidebar__navigation-menu-text">Employees</span>
+              </span>
+              <i
+                class="fa-solid fa-chevron-right sidebar__navigation-menu-arrow"
+              ></i>
+            </button>
+          </li>
+          <li>
+            <button class="sidebar__navigation-menu-button">
+              <span class="sidebar__navigation-menu-icon-text">
+                <i
+                  class="fa-solid fa-scissors sidebar__navigation-menu-icon"
+                ></i>
+                <span class="sidebar__navigation-menu-text">Services</span>
+              </span>
+              <i
+                class="fa-solid fa-chevron-right sidebar__navigation-menu-arrow"
+              ></i>
+            </button>
+          </li>
+          <li>
+            <button class="sidebar__navigation-menu-button">
+              <span class="sidebar__navigation-menu-icon-text">
+                <i
+                  class="fa-solid fa-paperclip sidebar__navigation-menu-icon"
+                ></i>
+                <span class="sidebar__navigation-menu-text">Products</span>
+              </span>
+              <i
+                class="fa-solid fa-chevron-right sidebar__navigation-menu-arrow"
+              ></i>
+            </button>
+          </li>
+          <li>
+            <button class="sidebar__navigation-menu-button">
+              <span class="sidebar__navigation-menu-icon-text">
+                <i
+                  class="fa-solid fa-parachute-box sidebar__navigation-menu-icon"
+                ></i>
+                <span class="sidebar__navigation-menu-text">Suppliers</span>
+              </span>
+              <i
+                class="fa-solid fa-chevron-right sidebar__navigation-menu-arrow"
+              ></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <section class="content">
+      <div class="content__background-wrapper">
+        <div class="content__main-wrapper">
+          <h1 class="content__title">SERVICES</h1>
+          <div class="content__search-table-wrapper">
+            <div class="search">
+              <input
+                class="search__input"
+                type="text"
+                placeholder="Search services"
+              />
+              <button class="search__button" id="search-button-1">
+                <i class="fa-solid fa-magnifying-glass search__button-icon"></i>
+              </button>
+            </div>
+            <table class="table">
+              <thead>
+                <tr class="table__header">
+                  <th class="table__cell table__cell--column--name" scope="col">
+                    <span class="table__header-dropdown-text">NAME</span>
+                    <i
+                      class="fa-solid fa-chevron-down table__header-dropdown-chevron"
+                    ></i>
+                  </th>
+                  <th class="table__cell" scope="col">DESCRIPTION</th>
+                  <th
+                    class="table__cell table__cell--column--category"
+                    scope="col"
+                  >
+                    CATEGORY
+                  </th>
+                  <th
+                    class="table__cell table__cell--column--price"
+                    scope="col"
+                  >
+                    <span class="table__header-dropdown-text">PRICE</span>
+                    <i
+                      class="fa-solid fa-chevron-down table__header-dropdown-chevron"
+                    ></i>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table__row">
+                  <td class="table__cell table__cell--column--name">
+                    Van Dyke
+                  </td>
+                  <td class="table__cell">
+                    Bigode levemente curvado com cavanhaque pontudo
+                  </td>
+                  <td class="table__cell table__cell--column--category">
+                    Cabelo
+                  </td>
+                  <td class="table__cell table__cell--column--price">10.20</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell table__cell--column--name">
+                    GARIBALDI
+                  </td>
+                  <td class="table__cell">ALTO VOLUME E BIGODE LONGO</td>
+                  <td class="table__cell table__cell--column--category">
+                    Cabelo
+                  </td>
+                  <td class="table__cell table__cell--column--price">10.20</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell table__cell--column--name">
+                    Undercut
+                  </td>
+                  <td class="table__cell">Corte lateral e traseiro completo</td>
+                  <td class="table__cell table__cell--column--category">
+                    Cabelo
+                  </td>
+                  <td class="table__cell table__cell--column--price">10.20</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell table__cell--column--name">
+                    High Fade
+                  </td>
+                  <td class="table__cell">
+                    Corte na zero sem transição até 5 cm acima da nuca
+                  </td>
+                  <td class="table__cell table__cell--column--category">
+                    Barba
+                  </td>
+                  <td class="table__cell table__cell--column--price">10.20</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell table__cell--column--name">Degradê</td>
+                  <td class="table__cell">
+                    Corte partindo da zero até o tamanho especificado
+                  </td>
+                  <td class="table__cell table__cell--column--category">
+                    Cabelo
+                  </td>
+                  <td class="table__cell table__cell--column--price">10.20</td>
+                </tr>
+              </tbody>
+            </table>
+            <nav class="content__pagination-menu-wrapper">
+              <ul class="content__pagination-menu">
+                <li>
+                  <button class="content__pagination-menu-button">
+                    <i class="fa-solid fa-chevron-left fa-2xs"></i>
+                    <i class="fa-solid fa-chevron-left fa-2xs"></i>
+                  </button>
+                </li>
+                <li>
+                  <button class="content__pagination-menu-button">
+                    <i class="fa-solid fa-chevron-left fa-2xs"></i>
+                  </button>
+                </li>
+                <li>
+                  <button class="content__pagination-menu-button">1</button>
+                </li>
+                <li>
+                  <button class="content__pagination-menu-button">2</button>
+                </li>
+                <li>
+                  <button class="content__pagination-menu-button">3</button>
+                </li>
+                <li>
+                  <button class="content__pagination-menu-button">4</button>
+                </li>
+                <li>
+                  <button class="content__pagination-menu-button">5</button>
+                </li>
+                <li>
+                  <button class="content__pagination-menu-button">
+                    <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                  </button>
+                </li>
+                <li>
+                  <button class="content__pagination-menu-button">
+                    <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                    <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="content__fade-overlay" id="overlay"></div>
+      <div class="content__modal" id="modal">
+        <div class="content__modal-main-wrapper">
+          <h2 class="content__modal-title">EDIT SERVICE</h2>
+          <nav class="content__modal-tab-menu">
+            <button class="content__modal-tab">Information</button>
+          </nav>
+          <form class="content__form-main-wrapper" id="form-1" method="POST">
+            <div class="content__form-column-wrapper">
+              <div class="content__form-item">
+                <label class="content__form-label" for="name">NAME</label>
+                <input class="content__form-input" type="text" name="name" id="name" form="form-1" required/>
+              </div>
+              <div class="content__form-item">
+                <label class="content__form-label" for="description">DESCRIPTION</label>
+                <textarea class="content__form-input content__form-textarea" name="description" id="description" form="form-1"></textarea>
+              </div>
+            </div>
+            <div class="content__form-column-wrapper">
+              <div class="content__form-item">
+                <label class="content__form-label" for="price">PRICE</label>
+                <input class="content__form-input" type="text" name="price" id="price" form="form-1" required/>
+              </div>
+              <div class="content__form-item">
+                <label class="content__form-label" for="category">CATEGORY</label>
+                <select class="content__form-input name="category" id="category" form="form-1" required></select>
+              </div>
+              <div class="content__form-item">
+                <label class="content__form-label" for="duration">DURATION</label>
+                <input class="content__form-input" type="text" name="duration" id="duration" form="form-1" required/>
+              </div>
+            </div>
+          </form>
+          <div class="content__modal-buttons-wrapper"><button class="content__modal-action-button" id="cancel-button">CANCEL</button></div>
+        </div>
+      </div>
+    </section>
+    <script src="home.js"></script>
+  </body>
+</html>
